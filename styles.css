@@ -1,0 +1,43 @@
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#m-icon {
+    cursor: pointer;
+}
+
+.menu {
+    width: 20px;
+    padding: 6px;
+    height: 20px;
+    display: inline-block;
+}
+
+.menu-section {
+    background: #000;
+    width: 20px;
+    height: 3px;
+    margin-top: 6px;
+    border-radius: 2px;
+    transition: 400ms ease;
+}
+
+.menu-section:first-of-type {
+    margin-top: 0px;
+}
+
+.mobile-open .menu-section:nth-child(1) {
+    transform: translateY(9px) translateX(0px) rotate(315deg);
+}
+
+.mobile-open .menu-section:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.mobile-open .menu-section:nth-child(3) {
+    display: none;
+}
